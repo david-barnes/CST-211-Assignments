@@ -1,0 +1,13 @@
+Assignment 1 Write-up questions.
+
+1. I had to make sure to check that when I use the operator= function that I don't have a situation like A = A,
+   so the function checks to see if the item on the left = the item on the right.
+
+2. The copy constructor and the operator= functions both create copies of the function passes in,
+   but the operator= function has to clear the variable first.
+
+3. I checked to make sure that dynamic memory was properly allocated, and if it wassn't an exception was thrown or the 
+   program was aborted.  
+
+4.The Big O of the array would be O(n). If the array is sorted it could cut the time to search the array in half.
+  This would make the expression O(log n).
