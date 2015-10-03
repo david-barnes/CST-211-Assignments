@@ -1,12 +1,16 @@
-//
-// Assignment  :  #1
-// Class       :  CST 211
-//
-// Author      :  David Barnes
-//
-// File        :  driver.cpp
-//
-//
+/****************************************************************
+* Author:				David Barnes
+* Date Created:			10/2/15
+* Last Modification Date:	10/3/15
+* Lab Number:			CST 211 Assignment 1
+* Filename:				driver.cpp
+*
+* Overview: This is the test file to see if my Exception and Array objects work.
+*
+*    Input: 
+*
+*   Output: 
+*****************************************************************/
 
 #include"Array.h"
 #include<iostream>
