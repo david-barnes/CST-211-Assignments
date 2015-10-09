@@ -39,15 +39,25 @@ int main()
 
 	cout << "B length is " << B.getLength() << endl;
 	
-	Exception xcept("Does this work");
-
-	Exception yes("yes it does");
-
-	cout << xcept << endl;
-
-	xcept = yes;
-
-	cout << xcept << endl;
+	try
+	{
+		cout << "trying to set the value of 10 to A[2]" << endl;
+		A[2] = 10;
+	}
+	catch (Exception)
+	{
+		cout << "An exception of type " << A.getException() << " was thrown." << endl;
+	}
+	
+	try
+	{
+		cout << "trying to set the value of 10 to A[20]" << endl;
+		A[20] = 10;
+	}
+	catch (Exception)
+	{
+		cout << "An exception of type " << A.getException() << " was thrown." << endl;
+	}
 
 	system("pause");
 
