@@ -1,8 +1,8 @@
 /****************************************************************
 * Author:				David Barnes
 * Date Created:			10/9/15
-* Last Modification Date:	10/11/15
-* Lab Number:			CST 211 Assignment 2
+* Last Modification Date:	10/19/15
+* Lab Number:			CST 211 Lab 1
 * Filename:				Array2D.inc
 *
 * Overview: This is the template file for the dynamic two dimensional array class.
@@ -30,12 +30,6 @@ template<class T>
 void Array2D<T>::memory(int row, int col)
 {
 	m_array = new T * [row];
-
-	if (!m_array)     /* Validate successful allocation */
-	{
-		xcept = "Bad Memory Allocation";
-		throw xcept;
-	}
 
 	for (int i = 0; i < m_row; i++)
 	{
@@ -145,6 +139,11 @@ Array2D<T>::Array2D(const Array2D &rhs)
 template<class T>
 Array2D<T>::~Array2D()
 {
+	for (int i = 0; i < m_row; i++)
+	{
+		delete[] m_array[i];
+	}
+
 	delete[] m_array;
 }
 

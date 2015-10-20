@@ -13,14 +13,33 @@
 *
 *   Output: N/A
 *****************************************************************/
-#include"Minesweeper.h"
-using namespace std;
+#include"Board.h"
 
-int main()
+#ifndef Minesweeper_H
+#define Minesweeper_H
+
+class Minesweeper
 {
-	Minesweeper game;
+	public:
+		Minesweeper();
+	
+		Minesweeper(const Minesweeper &rhs);
+	
+		~Minesweeper();
+	
+		Minesweeper &operator=(const Minesweeper &rhs);
 
-	game.run();
+		bool operator==(const Minesweeper &rhs);
 
-	return 0;
-}
+		bool operator!=(const Minesweeper &rhs);
+
+		void run();
+
+		Board* getBoard() const { return m_gameBoard; }
+	
+	private:
+
+		Board *m_gameBoard;
+};
+
+#endif

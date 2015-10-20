@@ -1,8 +1,8 @@
 /****************************************************************
 * Author:				David Barnes
 * Date Created:			10/9/15
-* Last Modification Date:	10/9/15
-* Lab Number:			CST 211 Assignment 2
+* Last Modification Date:	10/19/15
+* Lab Number:			CST 211 Lab 1
 * Filename:				Array2D.h
 *
 * Overview: This is the header file for the dynamic two dimensional array class.
@@ -25,8 +25,6 @@ template<class T>
 class Array2D
 {
 public:
-	// Default Constructor
-	Array2D();
 
 	// Constructor that creates array2D objects
 	Array2D(int row = 0, int col = 0);
